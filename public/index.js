@@ -49,14 +49,14 @@ const dropdownBeerList = function(beers){
 }
 
 const handleSelectChange = function(beer){
-  const image = document.createElement('img');
+  const image = document.querySelector('#beerpic');
   image.src = beer.image_url;
   image.height = 250;
   const name = document.querySelector('#beerName');
   name.textContent = beer.name;
   const description = document.querySelector('#description');
   description.textContent = beer.description;
-  
+
 }
 
 

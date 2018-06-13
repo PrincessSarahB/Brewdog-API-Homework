@@ -11,6 +11,11 @@ const makeRequest = function(url, callback){
 
 }
 
+const requestComplete = function(){
+  if(this.status !== 200) return;
+  const beers = JSON.parse(this.response);
+}
+
 
 
 
